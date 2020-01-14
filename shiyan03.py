@@ -46,9 +46,9 @@ str=" ".join(s)
 
 print(str)
 font_path="C:\Windows\Fonts\STXINWEI.TTF"
-img=Image.open("li.png")
+img=Image.open("li.jpg")
 bg_pic = np.array(img)
 
 wd = WordCloud(mask=bg_pic,background_color='white',font_path=font_path,width=200,height=135,margin=1,max_words=2000
                ,relative_scaling=0.4,min_font_size=5).generate(str)
-wd.to_file('0.jpg')
+wd.to_file('0.png')
